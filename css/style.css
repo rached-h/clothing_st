@@ -1,0 +1,28 @@
+svg{
+    
+    position: relative  ;
+    top: 10px;
+    left: 5px;
+    width: 33px;
+    height: 30px;
+    border: 1px solid #efdc90ee;
+    border-radius: 3px;
+    padding: 3px;
+    color: #EFDC90ee;
+}
+svg:hover{
+    color: #EFDC90;
+    border-color: #EFDC90;
+}
+.logo{
+    border-radius: 4px;
+    width: 160px;
+    
+}
+.custom-nav{
+    background-color: #867668;
+}
+.custom-font{
+    font:27px 'Times New Roman' !important;
+    color: #EFDC90 !important;
+}
