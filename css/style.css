@@ -1,28 +1,33 @@
-svg{
-    
-    position: relative  ;
-    top: 10px;
-    left: 5px;
-    width: 33px;
-    height: 30px;
-    border: 1px solid #efdc90ee;
-    border-radius: 3px;
-    padding: 3px;
-    color: #EFDC90ee;
+:root {
+  --primary-color: #84796f;
+  --secondary-color: #efdc90;
+  --shadow: rgba(0, 0, 0, 0.331) 0px 0px 9px;
 }
-svg:hover{
-    color: #EFDC90;
-    border-color: #EFDC90;
+.cart {
+  border: none;
+  border-radius: 3px;
+  background: none;
+  color: #efdc90ee !important;
+  box-shadow: rgba(0, 0, 0, 0.331) 0px 0px 9px;
+  
 }
-.logo{
-    border-radius: 4px;
-    width: 160px;
-    
+.cart:hover {
+  color: #efdc90;
+  border-color: #efdc90;
 }
-.custom-nav{
-    background-color: #867668;
+.logo {
+  border-radius: 4px;
+  width: 160px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.331) 0px 0px 9px;
 }
-.custom-font{
-    font:27px 'Times New Roman' !important;
-    color: #EFDC90 !important;
+.custom-nav {
+  background-color: #84796f;
+}
+ .custom-font {
+  font: 25px "Times New Roman", serif;
+  color: var(--secondary-color);
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  background-color: var(--primary-color);
 }
