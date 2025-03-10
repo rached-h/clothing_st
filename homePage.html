@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vittorio</title>
+    <link rel="icon" type="image/png" href="pics/favicon.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-md py-1 custom-nav">
+      <div class="container">
+        <a class="navbar-brand" href="homePage.html">
+          <img
+            src="pics/logo_bg.png"
+            alt="logo"
+            class="logo"
+            width="160px"
+            height="auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="22"
+            stroke="currentColor"
+            stroke-width="0"
+            fill="currentColor"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link m-2" aria-current="page" href="#"> Home </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle m-2"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu custom-dropdown p-0">
+                <li>
+                  <a class="dropdown-item" href="#">Classic suits</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Semi-casual</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Classic shoes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#" aria-label="Shopping Cart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- hero section ( carousel ) start  -->
+
+    <div id="carouselExampleCaptions" class="carousel slide m-1">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2500">
+          <img src="pics/kingsman.jpg" class="d-block w-100" alt="kingsman" />
+          <div class="carousel-caption ms-auto">
+            <div class="text-container1 ms-auto">
+              <h5 class="ms-auto">Welcome to <b>VITTORIO</b></h5>
+              <h6 class="ms-auto">The Gentleman's store</h6>
+
+              <button class="btn carousel-btn ms-auto">Discover All</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="pics/suit.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption m-auto">
+            <div class="text-container2 me-auto ms-5">
+              <h5 class="ms-auto">Classic & Elegant</h5>
+              <h6 class="ms-auto">Tailored for You</h6>
+              <button class="btn carousel-btn ms-auto">
+                Discover Our Suits
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="pics/casual.jpg" class="d-block w-100" alt="..." />
+
+          <div class="carousel-caption m-auto">
+            <div class="text-container3 ms-auto me-5">
+              <h5 class="ms-auto">Confident & Trendy</h5>
+              <h6 class="ms-auto">Casual, But Never Ordinary</h6>
+              <button class="btn carousel-btn ms-auto">
+                Discover Casual Wear
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2500">
+          <img src="pics/shoe.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption m-auto">
+            <div class="text-container3 ms-auto me-3">
+              <h5 class="ms-auto">Walk with Confidence</h5>
+              <h6 class="ms-auto">Precision in Every Step</h6>
+              <button class="btn carousel-btn ms-auto">
+                Discover Our Shoes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- hero section ( carousel ) end  -->
+
+    <!-- New arrivals section  -->
+
+    <div class="container"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="fonts/Lato/Lato-Regular.ttf"></script>
+  </body>
+</html>
