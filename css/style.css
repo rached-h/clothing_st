@@ -10,6 +10,9 @@
   font-family: 'marcellus';
   src: url("fonts/marcellus-Regular.ttf");
 }
+body{
+  background-color: #F5F3EE;
+}
 
 .custom-nav {
   background-color: #2c2c2c;
@@ -81,7 +84,7 @@ h6 {
   border: 2px #f7bb60 solid;
   color: #f7bb60;
   font-size: clamp(14px, 2vw, 20px);
-  padding: 10px 20px;
+  padding: 7px 20px;
   font-family: 'marcellus';
   background-color: #f7bb6010;
   min-width: 170px;
@@ -96,6 +99,79 @@ h6 {
   box-shadow: 0px 1px 5px 1px #bc8f4ba0;
   background-color: #f7bb6010;
 }
+h1{
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  color: #A67C52;
+
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; 
+    background: linear-gradient(to right rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0));
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px ;
+
+}
+
+.carousel-control-prev:hover {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0));
+    box-shadow: -5px 0px 5px 0px #00000062 ;
+}
+
+.carousel-control-next:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0));
+    box-shadow: 5px 0px 5px 0px #00000062 ;
+}
+.card-link{
+  text-decoration: none;
+}
+.card{
+  transition: all 0.2s ease-in-out;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: translateY(-2px);
+}
+.card-img-top{
+  border-radius: 10px;
+}
+
+.card-title{
+  font-family: 'lato';
+  font-size: x-large;
+}
+
+.card-text{
+  font-family: 'marcellus';
+}
+.price{
+  font-size: large;
+  font-weight: 500;
+  margin: 0 20px ;
+}
+footer{
+  background-color: #333333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: #E0E0E0;
+  padding: 20px;
+
+}
+footer a{
+  color: #00ADB5;
+}
+footer a:hover{
+  color: #FFD700;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
 
 @media (min-width: 768px) {
   .nav-item.dropdown:hover .dropdown-menu {
