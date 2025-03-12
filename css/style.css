@@ -1,28 +1,28 @@
-@font-face{
-  font-family: 'Playfair Display';
+@font-face {
+  font-family: "Playfair Display";
   src: url("fonts/PlayfairDisplay-Regular.ttf");
 }
-@font-face{
-  font-family: 'lato';
+@font-face {
+  font-family: "lato";
   src: url("fonts/lato-regular.ttf");
 }
-@font-face{
-  font-family: 'marcellus';
+@font-face {
+  font-family: "marcellus";
   src: url("fonts/marcellus-Regular.ttf");
 }
-body{
-  background-color: #F5F3EE;
+body {
+  background-color: #f5f3ee;
 }
 
 .custom-nav {
   background-color: #2c2c2c;
+  
 }
 .nav-link {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   color: #bc8e4b;
   font-size: 20px;
   font-weight: 600;
-
 }
 .nav-link:active,
 .nav-link:focus,
@@ -60,7 +60,7 @@ body{
   box-shadow: 0px 1px 5px 1px #bc8f4ba0;
 }
 .carousel-caption {
-  font-family: 'lato';
+  font-family: "lato";
   position: absolute;
   text-align: center;
   bottom: 40%;
@@ -68,8 +68,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  
-  
 }
 h5 {
   font-size: clamp(20px, 4vw, 50px); /* Grows smoothly with screen */
@@ -85,7 +83,7 @@ h6 {
   color: #f7bb60;
   font-size: clamp(14px, 2vw, 20px);
   padding: 7px 20px;
-  font-family: 'marcellus';
+  font-family: "marcellus";
   background-color: #f7bb6010;
   min-width: 170px;
 }
@@ -99,80 +97,181 @@ h6 {
   box-shadow: 0px 1px 5px 1px #bc8f4ba0;
   background-color: #f7bb6010;
 }
-h1{
-  font-family: 'Playfair Display';
+h1 {
+  font-family: "Playfair Display";
   font-weight: 600;
-  color: #A67C52;
-
+  color: #a67c52;
 }
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%; 
-    background: linear-gradient(to right rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0));
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px ;
-
+  width: 10%;
+  background: linear-gradient(to right rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0));
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
 .carousel-control-prev:hover {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0));
-    box-shadow: -5px 0px 5px 0px #00000062 ;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0));
+  box-shadow: -5px 0px 5px 0px #00000062;
 }
 
 .carousel-control-next:hover {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0));
-    box-shadow: 5px 0px 5px 0px #00000062 ;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0));
+  box-shadow: 5px 0px 5px 0px #00000062;
 }
-.card-link{
+.card-link {
   text-decoration: none;
 }
-.card{
+.card {
   transition: all 0.2s ease-in-out;
   padding: 5px;
   border-radius: 10px;
 }
-.card:hover{
+.card:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transform: translateY(-2px);
 }
-.card-img-top{
+.card-img-top {
   border-radius: 10px;
 }
 
-.card-title{
-  font-family: 'lato';
+.card-title {
+  font-family: "lato";
   font-size: x-large;
 }
 
-.card-text{
-  font-family: 'marcellus';
+.card-text {
+  font-family: "marcellus";
 }
-.price{
+.price {
   font-size: large;
   font-weight: 500;
-  margin: 0 20px ;
+  margin: 0 20px;
 }
-footer{
-  background-color: #333333;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  color: #E0E0E0;
-  padding: 20px;
-
-}
-footer a{
-  color: #00ADB5;
-}
-footer a:hover{
-  color: #FFD700;
-}
-.footer{
+.scroll-container {
   display: flex;
-  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
   justify-content: space-between;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.view-more{
+  text-decoration: underline ;
+  color: rgba(47, 47, 47, 0.532);
+}
+.view-more:hover{
+  color: rgb(47, 47, 47);
+}
+.scroll-item {
+  padding: 5px;
+  width: 250px;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-item:hover,
+.scroll-item:active,
+.scroll-item::after {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  transform: translateY(-5px);
+}
+.title-price {
+  text-align: start;
+  font-family: "lato";
+  padding: 5px 10px;
+}
+.product-img{
+  width: 100%;
+}
+.news-title {
+  font-weight: 600;
+  text-align: start;
+}
+.price {
+  text-align: start;
+}
+.cropped-section{
+  clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-top: 25px;
+}
+.discount-text{
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  right: 20%;
+  z-index: auto;
+  font-family: 'marcellus';
+}
+.discount-img{
+  width: 100%;
+}
+.discount{
+  font-size: 50px;
+  font-weight: 600;
+  color: #D8B594 ;
+  text-shadow: -2px 0px 9px #2c2c2c;
+  font-size: clamp(20px, 4vw, 50px);
+}
+.UpTo{
+  color:#f7bb60;
+  text-shadow: -2px 0px 9px #2c2c2c;
+  font-size: clamp(20px, 4vw, 50px);
 
 }
 
 
+footer {
+  background-color: #333333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: #e0e0e0;
+  padding: 20px 20px 0 20px;
+}
+footer img{
+  max-width: 200px;
+  width: 100%;
+
+}
+.footer h6{
+  font-size: large;
+}
+
+.follow-us li{
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  list-style: none;
+}
+.follow-us ul{
+  padding: 0 0 0 16px;
+  margin: 0;
+}
+.follow-us p{
+ margin: 0;
+}
+.follow-us svg{
+  margin: 0 10px;
+}
+.under-footer a{
+  font-size: 80%;
+}
 @media (min-width: 768px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
