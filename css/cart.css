@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay-Bold.ttf");
+  }
+  @font-face {
+    font-family: "lato";
+    src: url("fonts/lato-regular.ttf");
+  }
+  @font-face {
+    font-family: "marcellus";
+    src: url("fonts/marcellus-Regular.ttf");
+  }
+  .custom-nav {
+    background-color: #2c2c2c;
+  }
+  .nav-link {
+    font-family: "Playfair Display";
+    color: #bc8e4b;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover,
+  .navbar-nav .nav-link.show {
+    color: #f7bb60;
+    transform: translateY(-3px);
+    transition: ease-in-out 300ms;
+  }
+  
+  .dropdown-toggle {
+    color: #bc8e4b;
+  }
+  .custom-dropdown {
+    background-color: #2c2c2c;
+  }
+  .dropdown-item {
+    color: #bc8e4b;
+  }
+  .dropdown-item:hover {
+    color: #f7bb60;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    transform: translateY(-3px);
+    transition: ease-in-out 300ms;
+  }
+  
+  .navbar-toggler {
+    border-color: #bc8e4b;
+    color: #bc8e4b;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler:hover {
+    box-shadow: 0px 1px 5px 1px #bc8f4ba0;
+  }
+  @media (min-width: 768px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    .dropdown-menu {
+      display: block;
+      opacity: 0;
+      transform: translateY(-15px);
+      visibility: hidden;
+      transition: opacity 300ms ease, transform 300ms ease;
+    }
+  
+    .nav-item.dropdown:hover .dropdown-menu,
+    .nav-item.dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+  }
+  body {
+    background-color: #f5f3ee;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  p{
+    margin: 0;
+  }
+  .cart{
+    display: flex;
+    flex-direction: column;
+    box-shadow: #0000001a 0px 0px 5px 0px,
+    #0000001a 0px 0px 1px 0px;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 500px;
+  }
+  .cart h1{
+    margin: 20px auto;
+  }
+  .header{
+    align-items: center;
+    display: flex;
+    border-bottom: 2px rgba(0, 0, 0, 0.174) solid;
+    padding: 20px 0;
+  }
+  .header p{
+    text-align: center;
+  }
+  .Added{
+    margin: 25px 0;
+  }
+  .img-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .Added img {
+    width: 30px;
+  }
+  
+  .Added select{
+    border-radius: 5px;
+    border: 1px #00000084 solid;
+    background-color: #f5f3ee;
+    padding:  5px 20px;
+    color: rgb(31, 31, 31);
+  }
+  .Added input{
+    border-radius: 5px;
+    border: 1px #00000084 solid;
+    background-color: #f5f3ee;
+    padding:  5px  0 5px 20px;
+    color: rgb(31, 31, 31);
+    width: 50%;
+  }
+  .Quantity{
+    display: flex;
+    justify-content: center;
+  }
+  .size{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Added .trash{
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .Added .Total-p{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .checkout{
+    margin-top: auto;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-top: 2px rgba(0, 0, 0, 0.174) solid;
+    width: 100%;
+  }
+  .checkout .total{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    gap:5px;
+  }
+  .checkout button{
+    margin: 10px 0;
+  }
+  
+ 
+  footer {
+    background-color: #333333;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    color: #e0e0e0;
+    padding: 20px 20px 0 20px;
+  }
+  footer img {
+    max-width: 200px;
+    width: 100%;
+  }
+  .footer h6 {
+    font-size: large;
+  }
+  
+  .follow-us li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    list-style: none;
+  }
+  .follow-us ul {
+    padding: 0 0 0 16px;
+    margin: 0;
+  }
+  .follow-us p {
+    margin: 0;
+  }
+  .follow-us svg {
+    margin: 0 10px;
+  }
+  .under-footer a {
+    font-size: 80%;
+  }
+  
