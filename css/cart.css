@@ -9,7 +9,7 @@ p {
   margin: 25px auto;
   padding: 20px;
   border-radius: 10px;
-  height: 500px;
+  background: #fff;
 }
 
 .cart h1 {
