@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vittorio contact us</title>
+  <title>Vittorio Shop</title>
   <link rel="icon" href="pics/favicon.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/product-details.css" />
 </head>
 
 <body>
@@ -77,25 +77,76 @@
     </div>
   </nav>
   <!-- navbar end  -->
-  <div class="container contact">
-    <div class="header">
-      <h1>Contact Us</h1>
+  <!-- details section  -->
+  <div class="container-fluid">
+    <div class="navigation">
+      <a href="products.html" class="btn btn-outline-dark py-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left"
+          viewBox="0 0 16  16">
+          <path fill-rule="evenodd"
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg>
+      </a>
+      <ul class="path">
+        <li><a href="products.html">Gmother</a></li>
+        <li><a href="products.html">mother</a></li>
+        <li><a href="products.html">category</a></li>
+      </ul>
     </div>
-    <div class="row">
-      <div class="col forms">
-        <label for="Email">Email :</label>
-        <input type="text" class="form-control" id="Email" placeholder="example.example@example.com" />
-        <label for="topic">Topic</label>
-        <input type="text" class="form-control" name="topic" id="topic" placeholder="Topic" />
-        <label for="message">Message :</label>
-        <textarea name="message" class="form-control" id="message" placeholder="Message"></textarea>
+
+    <div class="product-all">
+      <div class="Allimages">
+        <div class="main-img">
+          <img src="pics/prototype - Copy.png" alt="" id="mainImg" width="100%" />
+        </div>
+        <div class="thumbnails">
+          <div class="thumbnail">
+            <img src="pics/prototype - Copy.png" alt="" width="25%" />
+          </div>
+          <div class="thumbnail">
+            <img src="pics/prototype - Copy (3).png" alt="" width="25%" />
+          </div>
+          <div class="thumbnail">
+            <img src="pics/prototype - Copy (4).png" alt="" width="25%" />
+          </div>
+          <div class="thumbnail">
+            <img src="pics/prototype - Copy (5).png" alt="" width="25%" />
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="title">product name</p>
+        <p class="discription">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+          voluptates rem, autem officiis, cumque unde fugit incid
+        </p>
+        <p class="price">00.00$</p>
+        <div class="colors">
+          <p>Color</p>
+          <div class="color selectedC" id="clr1"></div>
+          <div class="color" id="clr2"></div>
+          <div class="color" id="clr3"></div>
+        </div>
+        <div class="sizes">
+          <p>Size</p>
+          <button class="btn size selected">S</button>
+          <button class="btn size">M</button>
+          <button class="btn size">L</button>
+        </div>
+        <div class="order-btns">
+          <button class="Order-now">Order Now</button>
+          <button class="Add-to-C">
+            Add To Cart
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" stroke-width="0.5"
+              fill="currentColor" class="bi bi-cart" viewBox="0 0 20 20">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-    <div class="submit">
-      <input type="submit" class="btn btn-outline-dark me-5" />
-    </div>
   </div>
-
   <!-- footer  -->
   <footer>
     <div class="container-fluid footer row">
@@ -176,6 +227,7 @@
     <a href="#" class="text-light mx-3">© 2025 VITTORIO</a>
   </div>
 
+  <script src="js/detail.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
