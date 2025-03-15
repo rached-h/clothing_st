@@ -82,7 +82,7 @@ body {
   z-index: 100;
   width: 20%;
   top: 0;
-  left: -300px;
+  left: -100vw;
   padding: 20px;
   background-color: #f5f3ee;
   bottom: 0;

@@ -143,12 +143,108 @@
         </div>
       </div>
       <div class="checkout">
-          <div class="total">
-            <p>Total Price :</p>
-            <p>$</p>
-            <p id="total">00.00</p>
+        <div class="total">
+          <p>Total Price :</p>
+          <p>$</p>
+          <p id="total">00.00</p>
         </div>
-        <button class="btn btn-dark">Checkout</button>
+        <button class="btn btn-dark" id="checkout">Checkout</button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="pop-up" id="pop-up">
+      <div class="header">
+        <h1>Checkout</h1>
+        <button class="btn btn-outline-dark" id="close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+        </svg></button>
+      </div>
+      <div class="forms">
+        <form action="">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="fname" class="form-label">Full name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fname"
+                name="fname"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="Phone" class="form-label">Phone number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Phone"
+                name="phone"
+                maxlength="10"
+                placeholder="Phone number"
+              />
+            </div>
+          </div>
+          <div class="row" id="radio">
+            <label for="">Choose delivery type:</label>
+            <div class="col-md-6">
+              <input type="radio" id="doordrop" name="delivery" onclick="toggleDiv('address')" checked/>
+              <label for="doordrop">Door-drop</label>
+            </div>
+            <div class="col-md-6">
+              <input type="radio" id="Stopdesk" name="delivery" onclick="toggleDiv('city-commune')" />
+              <label for="Stopdesk">Stop-desk</label>
+            </div>
+          </div>
+          <div class="row disactivated" id="city-commune">
+            <div class="col-md-6">
+              <label for="city">City:</label>
+              <input
+                type="text"
+                id="city"
+                class="form-control"
+                name="city"
+                placeholder="City"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="commune">Commune:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="commune"
+                name="commune"
+                placeholder="Commune"
+              />
+            </div>
+          </div>
+          <div class="row " id="address">
+            <div class="col">
+              <label for="Address">Address:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Adresse"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="">Choose payment method:</label>
+            <div class="col-md-6">
+              <input type="radio" id="cod" name="payment" checked />
+              <label for="cod">Cash On delivery</label>
+            </div>
+            <div class="col-md-6">
+              <input type="radio" id="dahabiya" name="payment" />
+              <label for="dahabiya">Dahabiya card</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="final-btn">
+        <input type="submit" value="Place Order" class="btn btn-dark" />
       </div>
     </div>
 
