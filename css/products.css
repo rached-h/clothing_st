@@ -1,4 +1,6 @@
+
 .side-div {
+	font-family: var(--buttons-font);
 	position: fixed;
 	z-index: 100;
 	width: 20%;
@@ -15,16 +17,12 @@
 	left: 0;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
 .side-div div {
 	display: block;
 }
 
 .side-div ul {
+	font-family: var(--site-font);
 	padding: 0 10px;
 	list-style: none;
 }
@@ -39,8 +37,8 @@ a {
 }
 
 .categorie-header h3 {
-	font-family: var(--site-font);
-	font-weight: 600;
+	font-family: var(--heading-font);
+	font-weight: 700;
   text-transform: capitalize;
 	margin: 0;
 }
@@ -49,12 +47,7 @@ a {
   border-radius: 10px;
 	transition: all ease-in-out 0.3s;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 15px;
   padding-top: 10px;
-}
-
-.product.col-lg-3 {
-  width: calc(25% - 30px);
 }
 
 .product:hover {

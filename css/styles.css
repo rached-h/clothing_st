@@ -1,22 +1,22 @@
 @font-face {
-	font-family: 'Payfair Display';
-	src: url('fonts/PlayfairDisplay-Regular.ttf');
+	font-family: 'Playfair';
+	src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
 @font-face {
 	font-family: 'Lato';
-	src: url('fonts/lato-regular.ttf');
+	src: url('../fonts/Lato-Regular.ttf');
 }
 
 @font-face {
-	font-family: 'Marcellus';
-	src: url('fonts/marcellus-Regular.ttf');
+	font-family: 'Lora';
+	src: url('../fonts/Lora-VariableFont_wght.ttf');
 }
 
 :root {
 	--site-font: 'Lato';
-	--heading-font: 'Payfair Display';
-	--buttons-font: 'Marcellus';
+	--heading-font: 'Playfair';
+	--buttons-font: 'Lora';
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 a {
 	color: #000;
 	text-decoration: none;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 a:hover {
@@ -73,7 +73,11 @@ a:hover {
 }
 
 .dropdown-item {
+	font-family: var(--heading-font);
+	font-size: 20px;
+	font-weight: 600;
 	color: #bc8e4b;
+	transition: ease-in-out 300ms;
 }
 
 .dropdown-item:hover {
@@ -81,7 +85,7 @@ a:hover {
 	background-color: #2c2c2c;
 	border-radius: 5px;
 	transform: translateY(-3px);
-	transition: ease-in-out 300ms;
+	
 }
 
 .navbar-toggler {
@@ -94,8 +98,42 @@ a:hover {
 .navbar-toggler:hover {
 	box-shadow: 0px 1px 5px 1px #bc8f4ba0;
 }
+.custom-secondary-btn{
+	border-radius: 5px;
+  border: 1px #bc8e4b solid;
+  background-color: transparent;
+  color: #bc8e4b;
+  transition: all ease-in-out 0.3s;
+  font-family: var(--buttons-font);
+}
+.custom-secondary-btn:hover ,.custom-secondary-btn:focus{
+	
+	border: 1px #bc8e4b solid;
+  background-color: #bc8e4b;
+  color: #f5f3ee;
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.custom-primary-btn{
+	border-radius: 5px;
+  border: 1px #bc8e4b solid;
+  background-color: #bc8e4b;
+  color: #f5f3ee;
+  transition: all ease-in-out 0.3s;
+  font-family: var(--buttons-font);
+}
+.custom-primary-btn:hover ,.custom-primary-btn:focus{
+	
+	border: 1px #bc8e4b solid;
+  background-color: #bc8e4b;
+  color: #f5f3ee;
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 
 footer {
+	font-family: var(--site-font);
 	background-color: #333333;
 	color: #e0e0e0;
 	padding: 50px 20px;
@@ -116,6 +154,7 @@ footer img {
 }
 
 .footer h6 {
+	font-family: var(--buttons-font);
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;

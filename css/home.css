@@ -1,5 +1,5 @@
 .carousel-caption {
-	font-family: var(--site-font);
+	font-family: var(--heading-font);
 	position: absolute;
 	text-align: center;
 	bottom: 40%;
@@ -9,21 +9,17 @@
 	justify-content: end;
 }
 
-h5 {
+.carousel-caption h5 {
 	font-size: clamp(20px, 4vw, 50px);
 	/* Grows smoothly with screen */
 	font-weight: bold;
 }
 
-h6 {
+.carousel-caption h6 {
 	font-size: clamp(16px, 3vw, 35px);
 }
 
-.section-w {
-	max-width: 1300px;
-	padding: 50px 0;
-	margin: 0 auto;
-}
+
 
 .carousel-btn {
 	border: 2px #f7bb60 solid;
@@ -46,11 +42,7 @@ h6 {
 	background-color: #f7bb6010;
 }
 
-h1 {
-	font-family: var(--heading-font);
-	font-weight: 600;
-	color: #a67c52;
-}
+
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -69,38 +61,15 @@ h1 {
 	background: linear-gradient(to left, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0));
 	box-shadow: 5px 0px 5px 0px #00000062;
 }
-
-.card-link {
-	text-decoration: none;
+.section-w {
+	max-width: 1300px;
+	padding: 50px 0;
+	margin: 0 auto;
 }
-
-.card {
-	transition: all 0.2s ease-in-out;
-	padding: 5px;
-	border-radius: 10px;
-}
-
-.card:hover {
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	transform: translateY(-2px);
-}
-
-.card-img-top {
-	border-radius: 10px;
-}
-
-.card-title {
-	font-family: var(--site-font);
-	font-size: x-large;
-}
-
-.card-text {
-	font-family: var(--buttons-font);
-}
-
-.price {
-	font-size: large;
-	font-weight: 500;
+.section-w h1 {
+	font-family: var(--heading-font);
+	font-weight: 600;
+	color: #a67c52;
 }
 
 .scroll-container {
@@ -114,11 +83,6 @@ h1 {
 
 .scroll-container::-webkit-scrollbar {
 	display: none;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
 }
 
 .view-more {
@@ -142,7 +106,7 @@ a {
 	margin-right: 20px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	border-radius: 10px;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .scroll-item:hover,
@@ -155,7 +119,7 @@ a {
 
 .title-price {
 	text-align: start;
-	font-family: var(--site-font);
+	font-family: var(--buttons-font);
 	padding: 5px 10px;
 }
 

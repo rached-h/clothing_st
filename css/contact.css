@@ -1,15 +1,21 @@
 .header {
+	font-family: var(--heading-font);
+	font-weight: 700;
 	max-width: 700px;
 	padding: 0 25px;
 	margin: 0 auto;
 }
 
 .contact {
+	font-family: var(--site-font);
 	margin: 25px auto;
 	box-shadow: #0000001a 0px 0px 5px 0px, #0000001a 0px 0px 1px 0px;
 	padding: 50px 20px;
 	border-radius: 10px;
 	background-color: #fff;
+}
+.forms label{
+	font-family: var(--buttons-font);
 }
 
 .forms {
